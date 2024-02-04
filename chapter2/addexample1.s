@@ -11,3 +11,7 @@ _start:
 
     mov x16, #1
     svc #0x80
+
+l1:	ADD X0, XZR, X1
+	MOV X0, X1
+	ORR X0, XZR, X1
