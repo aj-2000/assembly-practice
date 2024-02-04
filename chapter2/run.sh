@@ -5,3 +5,7 @@ ld -o addexample1 addexample1.o -lSystem -syslibroot `xcrun -sdk macosx --show-s
 as -arch arm64 -o addexample2.o addexample2.s
 ld -o addexample2 addexample2.o -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start -arch arm64
 ./addexample2
+
+as -arch arm64 -o movexamps.o movexamps.s
+ld -o movexamps movexamps.o -lSystem -syslibroot `xcrun -sdk macosx --show-sdk-path` -e _start -arch arm64
+./movexamps
